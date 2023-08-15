@@ -1,0 +1,97 @@
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Pretendard-Regular';
+}
+
+body { min-height: 100%; }
+
+#logo {
+    margin-top: 134px;
+    text-align: center;
+}
+.checkImage {
+    text-align: center;
+}
+.checkImage > img{  
+    margin-top: 163.99px;
+}
+.checkMent {
+    margin-top: 18px;
+    text-align: center;
+    margin-bottom: 79px;
+}
+.checkMent > p{
+    font-size: 36px;
+    font-weight: 700;
+    color: #242424;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+
+
+
+
+.btn {
+    text-align: center;
+} 
+
+
+.checkDisabled {
+    background-image: url("img/checkDisabled.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    width: 26px;
+    height: 26px;
+    border: 0px;
+}
+.checkActive {
+    background-image: url("img/checkActive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    width: 26px;
+    height: 26px;
+    border: 0px;
+}
+
+
+
+
+.disabled {
+    text-align: center;
+    margin-top: 62px;
+    margin-bottom: 111px;
+    width: 709px;
+    height: 69px;
+    border: 0px;
+    border-radius: 41px;
+    background-color: #D9D9D9;
+
+    font-size: 26px;
+    color:#242424;
+    font-weight: 700;
+    align-content: center;
+}
+
+.active {
+    text-align: center;
+    width: 709px;
+    height: 69px;
+    border: 0px;
+    border-radius: 41px;
+    background-color: #EA5E6E;
+
+    font-size: 26px;
+    color: #FFFFFF;
+    font-weight: 700;
+    align-content: center;
+}
+

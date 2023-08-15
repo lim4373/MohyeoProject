@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./makegroup_style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>MOHYEO</title>
+  </head>
+
+  <body>
+    <!-- 네비게이션 바  -->
+    <header class="header">
+      <a href="../Home/groups_home.html">
+        <div class="header_logo">
+          <img
+            src="./img/makegroup_logo.png"
+            alt="MOHYEO"
+            width="164px"
+            height="26px"
+          />
+        </div>
+      </a>
+
+      <ul class="header_menu">
+        <li>
+          <a href="../Home/groups_home.html" class="groups">모임들</a>
+        </li>
+        <li>
+          <a href="../MyGroupHome/mygroup_home.html" class="mygroup">내모임</a>
+        </li>
+        <li>
+          <a href="../Calendar/calendar_home.html" class="calendar">캘린더</a>
+        </li>
+      </ul>
+
+      <div class="header_search">
+        <form>
+          <input type="search" placeholder="     search" />
+        </form>
+      </div>
+
+      <div class="header_profile">
+        <a href="../Profile/profile.html">
+          <img
+            src="./img/makegroup_profile.png"
+            alt="Profile"
+            width="44px"
+            height="44px"
+          />
+        </a>
+      </div>
+    </header>
+
+    <section>
+      <!-- 모임 만들기 화면의 큰 제목 -->
+      <div class="group_left">
+        <p id="c">
+          <a href="../MyGroupHome/mygroup_home.html">
+            <img
+              id="arrow"
+              src="./img/makegroup_leftarrow.png"
+              width="18px"
+              height="30px"
+            />
+          </a>
+        </p>
+        <p id="location">모임 만들기</p>
+        <div class="group_right">
+          <p id="c"></p>
+        </div>
+      </div>
+
+      <!-- 모임 만들기 화면의 작은 제목 -->
+      <div class="title">
+        <p id="c">분류를 선택해 주세요.</p>
+        <div class="title_right">
+          <p id="c"></p>
+        </div>
+      </div>
+
+      <!-- 모임 만들기 화면의 버튼 -->
+      <div class="button-container1">
+        <a href="makegroup2.html"><button class="button1">취미</button></a>
+        <a href="makegroup2.html"><button class="button1">관람</button></a>
+        <a href="makegroup2.html"><button class="button1">공부/배움</button></a>
+      </div>
+      <div class="button-container2">
+        <a href="makegroup2.html"><button class="button2">귀농</button></a>
+        <a href="makegroup2.html"><button class="button2">운동</button></a>
+      </div>
+    </section>
+    <script src="makegroup.js"></script>
+  </body>
+</html>

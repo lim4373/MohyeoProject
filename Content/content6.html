@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./content_style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>MOHYEO</title>
+  </head>
+
+  <body style="overflow-x: hidden">
+    <!-- 네비게이션 바  -->
+    <header class="header">
+      <a href="../Home/groups_home.html">
+        <div class="header_logo">
+          <img
+            src="./img/content_logo.png"
+            alt="MOHYEO"
+            width="164px"
+            height="26px"
+          />
+        </div>
+      </a>
+
+      <ul class="header_menu">
+        <li>
+          <a href="../Home/groups_home.html" class="groups">모임들</a>
+        </li>
+        <li>
+          <a href="../MyGroupHome/mygroup_home.html" class="mygroup">내모임</a>
+        </li>
+        <li>
+          <a href="../Calendar/calendar_home.html" class="calendar">캘린더</a>
+        </li>
+      </ul>
+
+      <div class="header_search">
+        <form>
+          <input type="search" placeholder="     search" />
+        </form>
+      </div>
+
+      <div class="header_profile">
+        <a href="../Profile/profile.html">
+          <img
+            src="./img/content_profile.png"
+            alt="Profile"
+            width="44px"
+            height="44px"
+          />
+        </a>
+      </div>
+    </header>
+    <section>
+      <!-- content 1 제목 -->
+      <div class="content1_title_left">
+        <p id="c">
+          <a href="../Home/groups_home.html">
+            <img
+              id="arrow"
+              src="./img/content_leftarrow.png"
+              width="18px"
+              height="30px"
+            />
+          </a>
+        </p>
+        <p id="location">독서 모임 같이해요~</p>
+        <p id="d">
+          <a href="#">
+            <img
+              id="sound"
+              src="./img/content_soundpic.png"
+              width="52px"
+              height="52px"
+            />
+          </a>
+        </p>
+        <div class="content1_title_right">
+          <p id="c"></p>
+        </div>
+      </div>
+
+      <!-- content 1 세부사항 -->
+      <div class="content1_detail_left">
+        <p id="c">
+          <img id="left" src="./img/c11.png" width="855px" height="2220px" />
+        </p>
+        <p id="d">
+          <a href="#">
+            <img id="right" src="./img/c12.png" width="366px" height="394px" />
+          </a>
+        </p>
+      </div>
+    </section>
+
+    <div id="popup" class="popup">
+      <div id="popup_upper">
+        <p>가입인사를 작성해주세요.</p>
+        <!-- 팝업창에서 지우기 버튼 -->
+        <img src="./img/content_X.png" id="x" />
+      </div>
+
+      <input type="text" id="greet" />
+      <button id="confirm" class="disabled" disabled="true">
+        가입 신청하기
+      </button>
+    </div>
+
+    <div id="popup2" class="popup2">
+      <p>가입신청이 완료되었습니다.</p>
+      <button id="confirm2">확인</button>
+    </div>
+
+    <script src="content6.js"></script>
+  </body>
+</html>

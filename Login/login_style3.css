@@ -1,0 +1,318 @@
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Pretendard-Regular';
+}
+
+body { min-height: 100%; }
+
+#logo {
+    margin-top: 134px;
+    text-align: center;
+}
+
+
+.bar {
+    display:flex;
+    justify-content: center;
+    margin-top: 87px;
+}
+
+
+
+.bar > #progress {
+    appearance: none;
+    width:635px;
+    height:35px;
+}
+.bar > #progress::-webkit-progress-bar {
+    width:635px;
+    height:35px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+}
+.bar > #progress::-webkit-progress-value {
+    border-radius: 20px;
+    background-color: #EA5E6E;
+}
+
+.stat {
+    margin-left: 35px;
+}
+.stat > b {
+    font-size: 24px;
+    font-weight: 700;
+    color: #9E9E9E;
+}
+
+
+.infor  {
+    margin-top: 51px;
+    display:flex;
+    justify-content: center;
+}
+.infor > .pBox > .p1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #4E4E4E;
+}
+.infor > .pBox > .p2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #787878;
+}
+.infor > .empty1 {
+    margin-left: 450px;
+}
+
+.allAgree  {
+    margin-top: 53px;
+    display:flex;
+    justify-content: center;
+    height: 26px;
+}
+.allAgreeArticle {
+    margin-left: 9px;
+}
+.allAgreeArticle > p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #4E4E4E;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.empty2 {
+    margin-left: 610px;
+}
+
+hr {
+    margin-top: 36.5px;
+    text-align: center;
+    width: 707px;
+    border: 1px solid #BBBBBB;
+}
+
+
+.Agree1  {
+    margin-top: 39.5px;
+    display:flex;
+    justify-content: center;
+    height: 26px;
+}
+.AgreeArticle1 {
+    margin-left: 9px;
+}
+.AgreeArticle1 > p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #4E4E4E;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.empty3 {
+    margin-left: 480px;
+}
+
+.AgreeTextBox1 {
+    text-align: center;
+    margin-top: 26px;
+}
+
+.AgreeTextBox1 > #text {
+    width: 706px;
+    height: 219px;
+    border: none;
+
+    background-color: #F3F3F3;
+
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.AgreeTextBox1 > #text::-webkit-scrollbar {
+    width: 30px;
+    background-color: #D9D9D9;
+}
+.AgreeTextBox1 > #text::-webkit-scrollbar-thumb {
+    width: 30px;
+    background-color: #989898;
+}
+.AgreeTextBox1 > #text::-webkit-scrollbar-track {
+    width: 30px;
+    background-color: #D9D9D9;
+}
+.AgreeTextBox1 > #text::-webkit-scrollbar-button:vertical:increment {
+    background-image: url('img/Polygon9.png');
+    background-size: 14px 7px;
+    background-repeat: no-repeat; /* 배경 이미지 반복 여부 */
+    background-position: center;
+}
+
+.AgreeTextBox1 > #text::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url('img/Polygon8.png'); /* 스크롤바 아래 버튼 이미지 */
+    background-size: 14px 7px; /* 배경 이미지 크기 */
+    background-repeat: no-repeat; /* 배경 이미지 반복 여부 */
+    background-position: center;
+}
+.AgreeTextBox1 > #text::-webkit-scrollbar-track-piece {
+    width: 30px;
+    background-color: #D9D9D9;
+}
+.AgreeTextBox1 > #text::-webkit-scrollbar-corner{
+    width: 30px;
+    background-color: #C3C3C3;
+}
+
+
+
+.Agree2  {
+    margin-top: 31px;
+    display:flex;
+    justify-content: center;
+    height: 26px;
+}
+.AgreeArticle2 {
+    margin-left: 9px;
+}
+.AgreeArticle2 > p{
+    font-size: 20px;
+    font-weight: 700;
+    color: #4E4E4E;
+
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.empty4 {
+    margin-left: 440px;
+}
+
+.AgreeTextBox2 {
+    text-align: center;
+    margin-top: 26px;
+}
+
+.AgreeTextBox2 > #text {
+    width: 706px;
+    height: 219px;
+    border: none;
+
+    background-color: #F3F3F3;
+
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.AgreeTextBox2 > #text::-webkit-scrollbar {
+    width: 30px;
+    background-color: #D9D9D9;
+}
+.AgreeTextBox2 > #text::-webkit-scrollbar-thumb {
+    width: 30px;
+    background-color: #989898;
+}
+.AgreeTextBox2 > #text::-webkit-scrollbar-track {
+    width: 30px;
+    background-color: #D9D9D9;
+}
+.AgreeTextBox2 > #text::-webkit-scrollbar-button:vertical:increment {
+    background-image: url('img/Polygon9.png');
+    background-size: 14px 7px;
+    background-repeat: no-repeat; /* 배경 이미지 반복 여부 */
+    background-position: center;
+}
+
+.AgreeTextBox2 > #text::-webkit-scrollbar-button:vertical:decrement {
+    background-image: url('img/Polygon8.png'); /* 스크롤바 아래 버튼 이미지 */
+    background-size: 14px 7px; /* 배경 이미지 크기 */
+    background-repeat: no-repeat; /* 배경 이미지 반복 여부 */
+    background-position: center;
+}
+.AgreeTextBox2 > #text::-webkit-scrollbar-track-piece {
+    width: 30px;
+    background-color: #D9D9D9;
+}
+.AgreeTextBox2 > #text::-webkit-scrollbar-corner{
+    width: 30px;
+    background-color: #C3C3C3;
+}
+
+
+
+
+
+
+
+
+
+
+.btn {
+    text-align: center;
+} 
+
+
+.checkDisabled {
+    background-image: url("img/checkDisabled.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    width: 26px;
+    height: 26px;
+    border: 0px;
+}
+.checkActive {
+    background-image: url("img/checkActive.png");
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-color: #FFFFFF;
+    width: 26px;
+    height: 26px;
+    border: 0px;
+}
+
+
+
+
+.disabled {
+    text-align: center;
+    margin-top: 62px;
+    margin-bottom: 111px;
+    width: 709px;
+    height: 69px;
+    border: 0px;
+    border-radius: 41px;
+    background-color: #D9D9D9;
+
+    font-size: 26px;
+    color:#242424;
+    font-weight: 700;
+    align-content: center;
+}
+
+.active {
+    text-align: center;
+    margin-top: 62px;
+    margin-bottom: 111px;
+    width: 709px;
+    height: 69px;
+    border: 0px;
+    border-radius: 41px;
+    background-color: #EA5E6E;
+
+    font-size: 26px;
+    color: #FFFFFF;
+    font-weight: 700;
+    align-content: center;
+}
+

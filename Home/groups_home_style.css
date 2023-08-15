@@ -1,0 +1,756 @@
+/* All */
+* {
+  font-family: Pretendard, "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+  /* margin: 0 auto; */
+}
+
+/* 전체 너비 */
+body {
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  /* 모든 요소를 가운데에 고정 */
+}
+
+/* header {
+  position: fixed;
+} */
+
+.header {
+  /*   요소가 여러 개일때사용 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 요소가 하나일때 */
+  text-align: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 204px;
+  /* position: relative; */
+  padding: 0px 317px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* 네비게이션 로고 스타일 */
+.header_logo {
+  /* position: absolute;
+  top: 121px;
+  left: 317px; */
+  text-align: center;
+  width: 164px;
+  height: 26px;
+}
+
+/* 네비게이션 메뉴 스타일 */
+.header_menu {
+  display: flex;
+  list-style: none;
+  /* 리스트 앞에 있는 점 없애기 */
+  padding-left: 0;
+  /*  position: absolute;
+  top: 116px;
+  left: 551px; */
+  text-align: center;
+  margin: 0px;
+  margin-left: 70px;
+}
+
+.groups:hover {
+  color: #ea5e6e;
+}
+.mygroup:hover {
+  color: #ea5e6e;
+}
+.calendar:hover {
+  color: #ea5e6e;
+}
+.groups {
+  color: #ea5e6e;
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+
+.mygroup {
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+  color: #242424;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+
+.calendar {
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+  color: #242424;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+
+.header_menu li {
+  margin: 0px 18px;
+}
+
+/* 네비게이션 검색 스타일 */
+.header_search {
+  /* position: absolute;
+  top: 109px;
+  left: 1216px; */
+  text-align: center;
+  width: 306px;
+  height: 45px;
+  font-family: Pretendard;
+  background: #eeeeee;
+  border-radius: 22.5px;
+  list-style: none;
+  display: flex;
+  margin-left: 316px;
+}
+
+.header_search > form > input {
+  border: none;
+  width: 306px;
+  height: 45px;
+  font-size: 18px;
+  font-family: Pretendard;
+  background: #eeeeee;
+  color: #5b5b5b;
+  outline: none;
+  border-radius: 68px;
+  padding-right: 10px;
+}
+
+.header_profile {
+  /* position: absolute;
+  top: 110px;
+  left: 1543px; */
+  text-align: center;
+  margin-left: 26px;
+}
+/* 여기까지 header파트 이 위는 건들지 말기!!! */
+
+/* slide 설정 값 */
+
+/* 이미지11~13 설정값 */
+.slider {
+  margin: 0 auto;
+  position: relative;
+  padding: 0;
+  margin-top: 297px;
+  text-align: center;
+  width: 1284px;
+  height: 486px;
+  overflow: hidden;
+}
+.slider img {
+  position: absolute;
+  transition: opacity 0.5s ease-in-out;
+  display: none;
+}
+
+.slider img.active {
+  display: block;
+}
+.slider > .slider-button {
+  position: absolute;
+  bottom: 20px;
+  left: 600px;
+  transform: translateY(-50%);
+  display: flex;
+  justify-content: center;
+}
+#b2 {
+  margin-right: 28px;
+  margin-left: 28px;
+}
+
+.off {
+  width: 19.6px;
+  height: 19.6px;
+  background-color: transparent;
+  background-image: url(img/off.png);
+  background-size: cover;
+
+  border: none;
+  cursor: pointer;
+}
+.on {
+  width: 19.6px;
+  height: 19.6px;
+  background-color: transparent;
+  background-image: url(img/on.png);
+  background-size: cover;
+
+  border: none;
+  cursor: pointer;
+}
+
+/* Group1_동네모임 */
+.group1_left {
+  /*   요소가 여러 개일때사용 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 요소가 하나일때 */
+  text-align: center;
+  width: 100%;
+  height: 188px;
+  padding-left: 250px;
+  padding-right: 220px;
+  padding-top: 140px;
+  background-color: white;
+  z-index: 1000;
+  text-align: center;
+  /* padding-top: 140px;
+  padding-left: 311px;
+  padding-right: 311px; */
+}
+
+.group1_left > #location {
+  /* 글꼴 선정 */
+  color: #242424;
+  font-family: Pretendard;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135.5%;
+  letter-spacing: -1.08px;
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  text-align: center;
+}
+.group1_left > #location > .location-text {
+  color: #ea5e6e;
+  font-family: Pretendard;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135.5%;
+  letter-spacing: -1.44px;
+}
+
+.group1_right {
+  width: 920px;
+  height: 48px;
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.group1_right > #c {
+  /* 글꼴선정 */
+  text-align: center;
+  color: #242424;
+  font-family: Pretendard;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135.5%; /* 48.78px */
+  letter-spacing: -1.08px;
+  padding-top: 0px;
+  padding-left: 720px;
+  padding-right: 0px;
+  margin: 0px;
+  text-align: center;
+  /* margin-top: 140px;
+  margin-left: 757px;
+  margin-right: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; */
+}
+
+.group1_right > #c > a {
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+  color: #242424;
+}
+
+.group1_right > #c > a > img {
+  text-align: center;
+  margin-left: 21px;
+  /* padding-right: 0px; */
+}
+
+/* Group1_동네모임_사진 3개 모음 */
+.group1_center {
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  /* text-align: center; */
+}
+
+.group1_center > ul {
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.group1_center > ul > li {
+  margin-top: 66px;
+  margin-left: 24px;
+  margin-right: 24px;
+  list-style: none;
+  /* 리스트 앞에 있는 점 없애기 */
+}
+
+/* Group2_배움추천 */
+.group2_left {
+  /*   요소가 여러 개일때사용 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 요소가 하나일때 */
+  text-align: center;
+  width: 100%;
+  height: 178px;
+  padding-left: 250px;
+  padding-right: 220px;
+  padding-top: 130px;
+  background-color: white;
+  z-index: 1000;
+  text-align: center;
+  /* padding-top: 140px;
+  padding-left: 311px;
+  padding-right: 311px; */
+}
+
+.group2_left > #location {
+  /* 글꼴 선정 */
+  color: #242424;
+  font-family: Pretendard;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135.5%;
+  letter-spacing: -1.08px;
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  text-align: center;
+}
+.group2_left > #location > .location-text {
+  color: #ea5e6e;
+  font-family: Pretendard;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135.5%;
+  letter-spacing: -1.44px;
+}
+
+.group2_right {
+  width: 990px;
+  height: 48px;
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.group2_right > #c {
+  /* 글꼴선정 */
+  text-align: center;
+  color: #242424;
+  font-family: Pretendard;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135.5%; /* 48.78px */
+  letter-spacing: -1.08px;
+  padding-top: 0px;
+  padding-left: 757px;
+  padding-right: 0px;
+  margin: 0px;
+  text-align: center;
+  /* margin-top: 140px;
+  margin-left: 757px;
+  margin-right: 0px;
+  display: flex;
+  justify-content: center;
+  flex-direction: column; */
+}
+
+.group2_right > #c > a {
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+  color: #242424;
+}
+
+.group2_right > #c > a > img {
+  text-align: center;
+  margin-left: 21px;
+  /* padding-right: 0px; */
+}
+
+/* Group2_배움추천_사진 6개 모음 */
+.group2_center1 {
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  /* text-align: center; */
+}
+
+.group2_center1 > ul {
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.group2_center1 > ul > li {
+  margin-top: 78px;
+  margin-left: 22px;
+  margin-right: 22px;
+  list-style: none;
+  /* 리스트 앞에 있는 점 없애기 */
+}
+
+.group2_center2 {
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  /* text-align: center; */
+}
+
+.group2_center2 > ul {
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.group2_center2 > ul > li {
+  margin-top: 41px;
+  margin-left: 22px;
+  margin-right: 22px;
+  list-style: none;
+  /* 리스트 앞에 있는 점 없애기 */
+}
+
+.group2_center3 {
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  /* text-align: center; */
+}
+
+.group2_center3 > ul {
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  display: flex;
+  /* flex-direction: column; */
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.group2_center3 > ul > li {
+  margin-top: 41px;
+  margin-left: 22px;
+  margin-right: 22px;
+  list-style: none;
+  /* 리스트 앞에 있는 점 없애기 */
+}
+
+/* Group3_카테고리 */
+.group3_left {
+  /*   요소가 여러 개일때사용 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 요소가 하나일때 */
+  text-align: center;
+  width: 100%;
+  height: 188px;
+  padding-left: 250px;
+  padding-right: 220px;
+  padding-top: 140px;
+  background-color: white;
+  z-index: 1000;
+  text-align: center;
+  /* padding-top: 140px;
+  padding-left: 311px;
+  padding-right: 311px; */
+}
+
+.group3_left > #location {
+  /* 글꼴 선정 */
+  color: #242424;
+  font-family: Pretendard;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135.5%; /* 48.78px */
+  letter-spacing: -1.08px;
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  /* display: flex;
+  flex-direction: column;
+  justify-content: center; */
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+.group3_right {
+  width: 1060px;
+  height: 48px;
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+/* Group3_카테고리 버튼 */
+.button-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* height: 100vh; */
+}
+
+.button {
+  width: 179.514px;
+  height: 81.082px;
+  flex-shrink: 0;
+  border-radius: 47px;
+  background: #ffffff;
+  color: #242424;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 36px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 135.5%; /* 48.78px */
+  letter-spacing: -1.08px;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: 0.5s;
+  box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.5);
+  display: inline-flex; /* 가로 정렬을 위해 inline-flex 사용 */
+  align-items: center; /* 세로 가운데 정렬 */
+  justify-content: center; /* 가로 가운데 정렬 */
+  margin: 5px;
+  margin-top: 70px;
+  margin-right: 21px;
+  margin-left: 21px;
+  margin-bottom: 65px;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+
+.button:hover {
+  background: #eeeeee;
+}
+
+.button.clicked {
+  background-color: #ea5e6e;
+  color: #ffffff;
+  cursor: default;
+}
+
+.button-container-active {
+  background-color: #ea5e6e;
+  color: #242424;
+}
+
+hr {
+  width: 66%;
+  height: 1px;
+  background-color: #c6c6c6;
+}
+
+/* Group3_카테고리 이미지 위에 커서 올릴 시 색상 변경 */
+.group3_list1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.group3_list1 > ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.group3_list1 > ul > li {
+  margin-top: 87px;
+  margin-left: 322px;
+  margin-right: 322px;
+  list-style: none;
+}
+
+.group3_list2 {
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.group3_list2 > ul {
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.group3_list2 > ul > li {
+  margin-top: 25px;
+  margin-left: 322px;
+  margin-right: 322px;
+  list-style: none;
+}
+
+.group3_list3 {
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.group3_list3 > ul {
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.group3_list3 > ul > li {
+  margin-top: 25px;
+  margin-left: 322px;
+  margin-right: 322px;
+  list-style: none;
+}
+
+.group3_list4 {
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.group3_list4 > ul {
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.group3_list4 > ul > li {
+  margin-top: 25px;
+  margin-left: 322px;
+  margin-right: 322px;
+  margin-bottom: 200px;
+  list-style: none;
+}

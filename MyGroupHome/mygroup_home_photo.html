@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./mygroup_home_photo_style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>MOHYEO</title>
+  </head>
+  <!-- <body style="overflow-x: hidden"> -->
+  <body>
+    <!-- 네비게이션 바  -->
+    <header class="header">
+      <a href="../Home/groups_home.html">
+        <div class="header_logo">
+          <img
+            src="./img/mygrouphome_logo.png"
+            alt="MOHYEO"
+            width="164px"
+            height="26px"
+          />
+        </div>
+      </a>
+
+      <ul class="header_menu">
+        <li><a href="../Home/groups_home.html" class="groups">모임들</a></li>
+        <li><a href="./mygroup_home.html" class="mygroup">내모임</a></li>
+        <li>
+          <a href="../Calendar/calendar_home.html" class="calendar">캘린더</a>
+        </li>
+      </ul>
+
+      <div class="header_search">
+        <form>
+          <input type="search" placeholder="     search" />
+        </form>
+      </div>
+
+      <div class="header_profile">
+        <a href="../Profile/profile.html">
+          <img
+            src="./img/mygrouphome_profile.png"
+            alt="Profile"
+            width="44px"
+            height="44px"
+          />
+        </a>
+      </div>
+    </header>
+
+    <!-- 네비게이션 바 설정 -->
+    <nav class="nav">
+      <div class="navigationbar">
+        <li><a href="mygroup_home_text.html" class="text">게시판</a></li>
+        <li><a href="mygroup_home_photo.html" class="photo">사진첩</a></li>
+        <li><a href="mygroup_home_schedule.html" class="schedule">일정</a></li>
+        <li><a href="mygroup_home_member.html" class="member">맴버</a></li>
+      </div>
+      <div class="navigationbar2">
+        <img
+          src="./img/underline.png"
+          alt="underline"
+          class="underline"
+          width="147px"
+          height="15px"
+        />
+      </div>
+    </nav>
+
+    <!-- 공지사항 바 설정 -->
+    <section class="tip">
+      <!-- 왼쪽 공지사항 -->
+      <div id="left">
+        <img id="left" src="./img/tip_left.png" width="405px" height="268px" />
+        <!-- <div class="button1"><a href="#" class="join">일정 참여하기</a></div> -->
+        <div class="button2" id="invite-button">
+          <a href="#" class="invite">초대하기</a>
+        </div>
+      </div>
+
+      <!-- 가운데 content -->
+      <div class="d">
+        <!-- 가운데 컨텐츠 제목 -->
+        <div class="title">
+          <div class="left">
+            <p>울 모임 사진은 모혀?</p>
+          </div>
+          <div class="center"></div>
+          <div class="right">
+            <a href="#">
+              <img
+                id="right_img"
+                src="./img/photo_uploading.png"
+                width="200px"
+                height="66px"
+              />
+            </a>
+          </div>
+        </div>
+        <!-- 가운데 컨텐츠 내용 3가지 -->
+        <div class="content">
+          <li>
+            <a href="#">
+              <img
+                id="text_content1"
+                src="./img/photo1.png"
+                width="269px"
+                height="299px"
+              />
+            </a>
+            <a href="#">
+              <img
+                id="text_content2"
+                src="./img/photo2.png"
+                width="269px"
+                height="299px"
+              />
+            </a>
+            <a href="#">
+              <img
+                id="text_content3"
+                src="./img/photo3.png"
+                width="269px"
+                height="299px"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="#">
+              <img
+                id="text_content4"
+                src="./img/photo4.png"
+                width="269px"
+                height="299px"
+              />
+            </a>
+            <a href="#">
+              <img
+                id="text_content5"
+                src="./img/photo5.png"
+                width="269px"
+                height="299px"
+              />
+            </a>
+            <a href="./mygroup_home_photo2.html">
+              <img
+                id="text_content6"
+                src="./img/photo6.png"
+                width="269px"
+                height="299px"
+              />
+            </a>
+          </li>
+        </div>
+      </div>
+
+      <!-- 오른쪽 공지사항 -->
+      <div id="right">
+        <img
+          id="right"
+          src="./img/tip_right.png"
+          width="405px"
+          height="296px"
+        />
+      </div>
+
+      <div id="invite-popup" class="invite-popup">
+        <div class="invite-nav">
+          <p>초대하기</p>
+          <img
+            src="img/popup-x.png"
+            width="18px"
+            height="18.6px"
+            id="invite-x-button"
+            onclick="invitePopup.style.display='none'"
+          />
+        </div>
+
+        <div class="invite-main">
+          <a href="#"
+            ><img src="img/kakao.png" width="54.7px" height="53.5px" id="main1"
+          /></a>
+          <a href="#"
+            ><img src="img/msg.png" width="54.7px" height="53.5px" id="main2"
+          /></a>
+          <a href="#"
+            ><img src="img/naver.png" width="54.7px" height="53.5px" id="main3"
+          /></a>
+          <a href="#"
+            ><img src="img/blog.png" width="54.7px" height="53.5px" id="main4"
+          /></a>
+        </div>
+
+        <div class="invite-urlset">
+          <div id="url"></div>
+          <button id="copy-button">URL 복사</button>
+        </div>
+      </div>
+
+      <script src="mygroup_home_photo.js"></script>
+    </section>
+  </body>
+</html>

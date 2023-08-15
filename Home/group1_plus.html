@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./group1_plus_style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>MOHYEO</title>
+  </head>
+
+  <body style="overflow-x: hidden">
+    <!-- 네비게이션 바  -->
+    <header class="header">
+      <a href="./groups_home.html">
+        <div class="header_logo">
+          <img
+            src="./img/home_logo.png"
+            alt="MOHYEO"
+            width="164px"
+            height="26px"
+          />
+        </div>
+      </a>
+
+      <ul class="header_menu">
+        <li>
+          <a href="./groups_home.html" class="groups">모임들</a>
+        </li>
+        <li>
+          <a href="../MyGroupHome/mygroup_home.html" class="mygroup">내모임</a>
+        </li>
+        <li>
+          <a href="../Calendar/calendar_home.html" class="calendar">캘린더</a>
+        </li>
+      </ul>
+
+      <div class="header_search">
+        <form>
+          <input type="search" placeholder="     search" />
+        </form>
+      </div>
+
+      <div class="header_profile">
+        <a href="../Profile/profile.html">
+          <img
+            src="./img/home_profile.png"
+            alt="Profile"
+            width="44px"
+            height="44px"
+          />
+        </a>
+      </div>
+    </header>
+
+    <section>
+      <!-- Group1_동네모임 더보기 화면 -->
+      <div class="group1_left">
+        <p id="c">
+          <a href="./groups_home.html">
+            <img
+              id="arrow"
+              src="./img/home_leftarrow.png"
+              width="18px"
+              height="30px"
+            />
+          </a>
+        </p>
+        <p id="location">
+          <span class="location-text">의정부 1동</span> 근처 인기는 모혀?
+        </p>
+        <p id="d">
+          <a href="#">
+            <img
+              id="sound"
+              src="./img/home_soundpic.png"
+              width="52px"
+              height="52px"
+            />
+          </a>
+        </p>
+        <div class="group1_right">
+          <p id="c"></p>
+        </div>
+      </div>
+
+      <div
+        class="group1_list1"
+        onmouseover="hoverImage1(true)"
+        onmouseout="hoverImage1(false)"
+      >
+        <ul id="img" class="group1imgs">
+          <li>
+            <a href="../Content/content4.html">
+              <img
+                id="img51"
+                src="./img/51.png"
+                alt="img51"
+                width="
+                  1283px"
+                height="
+                115px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="group1_list2"
+        onmouseover="hoverImage2(true)"
+        onmouseout="hoverImage2(false)"
+      >
+        <ul id="img" class="group1imgs">
+          <li>
+            <a href="../Content/content5.html">
+              <img
+                id="img52"
+                src="./img/52.png"
+                alt="img52"
+                width="
+                1283px"
+                height="
+              115px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="group1_list3"
+        onmouseover="hoverImage3(true)"
+        onmouseout="hoverImage3(false)"
+      >
+        <ul id="img" class="group1imgs">
+          <li>
+            <a href="../Content/content6.html">
+              <img
+                id="img53"
+                src="./img/53.png"
+                alt="img53"
+                width="
+                1283px"
+                height="
+              115px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="group1_list4"
+        onmouseover="hoverImage4(true)"
+        onmouseout="hoverImage4(false)"
+      >
+        <ul id="img" class="group1imgs">
+          <li>
+            <a href="#">
+              <img
+                id="img54"
+                src="./img/54.png"
+                alt="img54"
+                width="
+                  1283px"
+                height="
+                115px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script>
+      function startSectionSpeech(sectionId, text) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        const section = document.getElementById(sectionId);
+
+        // 음성 재생
+        speechSynthesis.speak(utterance);
+      }
+
+      document.getElementById("sound").addEventListener("click", function () {
+        const sectionId = "sound";
+        const text =
+          "의정부 1동 근처 인기는 모혀? 재태크 배워볼텨?, 즐거운 등산을 함께할 육십대!, 독서모임 같이해요, 뜨개질 재미있게 배울 분! 등이 있습니다";
+
+        startSectionSpeech(sectionId, text);
+      });
+
+      var isHovered = false;
+
+      function hoverImage1(enter) {
+        var image = document.getElementById("img51");
+        if (enter) {
+          if (!isHovered) {
+            isHovered = true;
+            image.src = "./img/55.png";
+          }
+        } else {
+          if (isHovered) {
+            isHovered = false;
+            image.src = "./img/51.png";
+          }
+        }
+      }
+
+      var isHovered = false;
+
+      function hoverImage2(enter) {
+        var image = document.getElementById("img52");
+        if (enter) {
+          if (!isHovered) {
+            isHovered = true;
+            image.src = "./img/56.png";
+          }
+        } else {
+          if (isHovered) {
+            isHovered = false;
+            image.src = "./img/52.png";
+          }
+        }
+      }
+      var isHovered = false;
+
+      function hoverImage3(enter) {
+        var image = document.getElementById("img53");
+        if (enter) {
+          if (!isHovered) {
+            isHovered = true;
+            image.src = "./img/57.png";
+          }
+        } else {
+          if (isHovered) {
+            isHovered = false;
+            image.src = "./img/53.png";
+          }
+        }
+      }
+      var isHovered = false;
+
+      function hoverImage4(enter) {
+        var image = document.getElementById("img54");
+        if (enter) {
+          if (!isHovered) {
+            isHovered = true;
+            image.src = "./img/58.png";
+          }
+        } else {
+          if (isHovered) {
+            isHovered = false;
+            image.src = "./img/54.png";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

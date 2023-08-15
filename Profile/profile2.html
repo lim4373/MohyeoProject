@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./profile.style2.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>MOHYEO</title>
+  </head>
+
+  <body style="overflow-x: hidden">
+    <!-- 네비게이션 바  -->
+    <header class="header">
+      <a href="../Home/groups_home.html">
+        <div class="header_logo">
+          <img
+            src="./img/profile_logo.png"
+            alt="MOHYEO"
+            width="164px"
+            height="26px"
+          />
+        </div>
+      </a>
+
+      <ul class="header_menu">
+        <li>
+          <a href="../Home/groups_home.html" class="groups">모임들</a>
+        </li>
+        <li>
+          <a href="../MyGroupHome/mygroup_home.html" class="mygroup">내모임</a>
+        </li>
+        <li>
+          <a href="../Calendar/calendar_home.html" class="calendar">캘린더</a>
+        </li>
+      </ul>
+
+      <div class="header_search">
+        <form>
+          <input type="search" placeholder="     search" />
+        </form>
+      </div>
+
+      <div class="header_profile">
+        <a href="../Profile/profile.html">
+          <img
+            src="./img/profile_profile.png"
+            alt="Profile"
+            width="44px"
+            height="44px"
+          />
+        </a>
+      </div>
+    </header>
+
+    <div class="group_left">
+      <p id="c">
+        <a href="./profile.html">
+          <img
+            id="arrow"
+            src="./img/profile_leftarrow.png"
+            width="18px"
+            height="30px"
+          />
+        </a>
+      </p>
+      <p id="location">프로필 편집</p>
+      <div class="group_right">
+        <p id="c"></p>
+      </div>
+    </div>
+
+    <div class="section1">
+      <img
+        src="img/userpicture.png"
+        alt="이미지"
+        id="user_picture"
+        accept="image/*"
+        onchange="loadFile(this)"
+      />
+    </div>
+
+    <div class="nameInput">
+      <div class="nameSubject">
+        <p>이름</p>
+        <div class="empty2"></div>
+      </div>
+
+      <input type="text" placeholder="  이름" id="Name" />
+    </div>
+
+    <div class="dateInput">
+      <div class="dateSubject">
+        <p>생년월일</p>
+        <div class="empty3"></div>
+      </div>
+
+      <div class="date">
+        <input
+          type="text"
+          placeholder="  년(4자)"
+          id="year"
+          oninput="this.value=this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+        />
+
+        <input
+          type="text"
+          placeholder="  월"
+          id="month"
+          oninput="this.value=this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+        />
+
+        <input
+          type="text"
+          placeholder="  일"
+          id="day"
+          oninput="this.value=this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+        />
+      </div>
+    </div>
+
+    <div class="sexWhere">
+      <div class="sexInput">
+        <div class="sexSubject">
+          <p>성별</p>
+          <div class="empty4"></div>
+        </div>
+
+        <div class="sex">
+          <button type="submit" id="maleBtn">남</button>
+          <button type="submit" id="femaleBtn">여</button>
+        </div>
+      </div>
+
+      <div class="whereInput">
+        <div class="whereSubject">
+          <p>거주지역</p>
+          <div class="empty5"></div>
+        </div>
+
+        <div class="where">
+          <input type="text" placeholder="  지역을 입력해주세요" id="area" />
+        </div>
+      </div>
+    </div>
+
+    <div class="numberInput">
+      <div class="numberSubject">
+        <p>전화번호</p>
+      </div>
+
+      <div class="number">
+        <input
+          type="text"
+          placeholder="  전화번호"
+          id="num"
+          oninput="this.value=this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+        />
+      </div>
+    </div>
+
+    <div class="btn">
+      <button type="submit" id="Btn" class="disabled">저장</button>
+    </div>
+
+    <script src="profile.script2.js"></script>
+  </body>
+</html>

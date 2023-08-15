@@ -1,0 +1,251 @@
+/* All */
+* {
+  font-family: Pretendard, "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+  width: 1920px;
+  height: 1080px;
+  margin: 0px;
+  padding: 0px;
+}
+
+/* onboarding */
+div {
+  width: 100%;
+  height: 100%;
+  background-color: #ffffff;
+}
+
+a {
+  display: inline;
+  width: 164px;
+  height: 26px;
+}
+
+/* MOHYEO logo */
+.logo_img {
+  padding: 121px 1439px 39px 317px;
+  flex-shrink: 0;
+}
+
+/* 화면 위쪽 */
+#div_top {
+  width: 1920px;
+  height: 186px;
+  background-color: #ffffff;
+}
+
+/* 화면 왼쪽 */
+#div_left {
+  width: 1075px;
+  height: 724px;
+  float: left;
+  background-color: #fff6f7;
+  text-align: left;
+}
+
+/* 화면 오른쪽 */
+#div_right {
+  width: 845px;
+  height: 724px;
+  float: left;
+  background-image: url("./img/onboarding1.png");
+  background-size: 100%100%;
+  position: relative; /* 위치 지정을 위해 relative 설정 */
+}
+#div_right > #section1Button {
+  position: absolute;
+  top: 80%; /* 버튼을 수직 중앙으로 배치 */
+  left: 50%; /* 버튼을 수평 중앙으로 배치 */
+  transform: translate(-50%, -50%);
+  background-image: url("./img/onboarding_soundlogo.png");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 127px;
+  height: 127px;
+}
+
+#div_right2 {
+  width: 845px;
+  height: 724px;
+  float: left;
+  background-image: url("./img/onboarding2.png");
+  background-size: 100%100%;
+  position: relative; /* 위치 지정을 위해 relative 설정 */
+}
+#div_right2 > #section2Button {
+  position: absolute;
+  top: 80%; /* 버튼을 수직 중앙으로 배치 */
+  left: 50%; /* 버튼을 수평 중앙으로 배치 */
+  transform: translate(-50%, -50%);
+  background-image: url("./img/onboarding_soundlogo.png");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 127px;
+  height: 127px;
+}
+
+#div_right3 {
+  width: 845px;
+  height: 724px;
+  float: left;
+  background-image: url("./img/onboarding3.png");
+  background-size: 100%100%;
+  position: relative; /* 위치 지정을 위해 relative 설정 */
+}
+#div_right3 > #section3Button {
+  position: absolute;
+  top: 80%; /* 버튼을 수직 중앙으로 배치 */
+  left: 50%; /* 버튼을 수평 중앙으로 배치 */
+  transform: translate(-50%, -50%);
+  background-image: url("./img/onboarding_soundlogo.png");
+  background-size: cover;
+  background-color: transparent;
+  border: none;
+  cursor: pointer;
+  width: 127px;
+  height: 127px;
+}
+
+/* .sound_img {
+  position: absolute;
+  top: 499px;
+  left: 385px;
+  padding: 499px 318px 84px 385px;
+  flex-shrink: 0;
+} */
+
+/* 화면 아래쪽 */
+#div_root {
+  width: 1920px;
+  height: 170px;
+  clear: both;
+  background-color: #ffffff;
+}
+
+.downscroll {
+  position: absolute;
+  top: 960px;
+  left: 917px;
+  text-align: center;
+}
+
+/* p태그 */
+p.title {
+  margin: 0;
+  width: 760px;
+  height: 297px;
+  /* padding: 0px 70px; */
+  color: #313131;
+  font-family: Pretendard;
+  font-size: 80px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 127.836%; /* 102.269px */
+  letter-spacing: -2.4px;
+  position: relative;
+  top: 132px;
+  left: 315px;
+}
+
+p.title3 {
+  margin: 0;
+  width: 537px;
+  height: 257px;
+  /* padding: 0px 70px; */
+  color: #313131;
+  font-family: Pretendard;
+  font-size: 100px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 127.836%; /* 127.836px */
+  letter-spacing: -3px;
+  position: relative;
+  top: 121px;
+  left: 315px;
+}
+
+p.content {
+  width: 416px;
+  height: 102px;
+  margin: 0 auto;
+  color: #797979;
+  font-family: Pretendard;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 142.336%; /* 37.007px */
+  letter-spacing: -0.78px;
+  position: absolute;
+  top: 725px;
+  left: 317px;
+}
+
+p.content3 {
+  width: 416px;
+  height: 102px;
+  margin: 0 auto;
+  color: #797979;
+  font-family: Pretendard;
+  font-size: 26px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: 142.336%; /* 37.007px */
+  letter-spacing: -0.78px;
+  position: absolute;
+  top: 586px;
+  left: 317px;
+}
+
+/* 애니메이션 효과 */
+@keyframes fadeOutUp {
+  from {
+    opacity: 1;
+    transform: translateY(0);
+  }
+  to {
+    opacity: 0;
+    transform: translateY(-100%);
+  }
+}
+
+/* 페이지 이동 버튼에 마우스 호버 효과 추가 (이미지 확대)
+.next-page-link:hover .downscroll {
+  transform: translate(-50%, -50%) scale(1.2);
+} */
+
+/* 버튼 스타일 */
+.button {
+  width: 302px;
+  height: 89px;
+  flex-shrink: 0;
+  border-radius: 44.5px;
+  background: #ea5e6e;
+  position: absolute;
+  top: 725px;
+  left: 315px;
+  color: #fff;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 142.336%; /* 45.548px */
+  letter-spacing: -0.96px;
+  text-decoration: none;
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  appearance: none;
+  transition: 0.5s;
+  /* margin: 0;
+  padding: 0; */
+  border: none;
+  display: inline-flex; /* 가로 정렬을 위해 inline-flex 사용 */
+  align-items: center; /* 세로 가운데 정렬 */
+  justify-content: center; /* 가로 가운데 정렬 */
+}
+
+.button:hover {
+  background-color: #ff9ba6;
+}

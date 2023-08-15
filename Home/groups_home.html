@@ -1,0 +1,427 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./groups_home_style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>MOHYEO</title>
+  </head>
+
+  <!-- <body style="overflow-x: hidden"> -->
+
+  <body>
+    <!-- 네비게이션 바  -->
+    <header class="header">
+      <a href="./groups_home.html">
+        <div class="header_logo">
+          <img
+            src="./img/home_logo.png"
+            alt="MOHYEO"
+            width="164px"
+            height="26px"
+          />
+        </div>
+      </a>
+
+      <ul class="header_menu">
+        <li>
+          <a href="./groups_home.html" class="groups">모임들</a>
+        </li>
+        <li>
+          <a href="../MyGroupHome/mygroup_home.html" class="mygroup">내모임</a>
+        </li>
+        <li>
+          <a href="../Calendar/calendar_home.html" class="calendar">캘린더</a>
+        </li>
+      </ul>
+
+      <div class="header_search">
+        <form>
+          <input type="search" placeholder="     search" />
+        </form>
+      </div>
+
+      <div class="header_profile">
+        <a href="../Profile/profile.html">
+          <img
+            src="./img/home_profile.png"
+            alt="Profile"
+            width="44px"
+            height="44px"
+          />
+        </a>
+      </div>
+    </header>
+
+    <section>
+      <div class="slider">
+        <a href="../Content/content1.html">
+          <img
+            src="./img/11.png"
+            alt="img11"
+            width="1284px"
+            height="485px"
+            class="active"
+            id="img1"
+          />
+        </a>
+        <a href="../Content/content2.html">
+          <img
+            src="img/12.png"
+            alt="img12"
+            width="1284px"
+            height="485px"
+            id="img2"
+          />
+        </a>
+        <a href="../Content/content3.html">
+          <img
+            src="img/13.png"
+            alt="img13"
+            width="1284px"
+            height="485px"
+            id="img3"
+          />
+        </a>
+
+        <div class="slider-button">
+          <button
+            id="b1"
+            class="off"
+            onclick="showImageById('img1', 'b1')"
+          ></button>
+          <button
+            id="b2"
+            class="off"
+            onclick="showImageById('img2', 'b2')"
+          ></button>
+          <button
+            id="b3"
+            class="off"
+            onclick="showImageById('img3', 'b3')"
+          ></button>
+        </div>
+      </div>
+      <script>
+        const slider = document.querySelector(".slider");
+        const images = slider.querySelectorAll("img");
+        const buttons = slider.querySelectorAll(".slider-button button");
+
+        function showImageById(imageId, buttonId) {
+          const targetIndex = Array.from(images).findIndex(
+            (img) => img.id === imageId
+          ); // 타겟 이미지의 인덱스 가져오기
+
+          images.forEach((img) => {
+            img.classList.remove("active");
+          });
+
+          buttons.forEach((button) => {
+            button.classList.remove("on");
+          });
+
+          const image = document.getElementById(imageId);
+          const button = document.getElementById(buttonId);
+
+          image.classList.add("active");
+          button.classList.add("on");
+          currentImageIndex = targetIndex; // 타겟 이미지 인덱스로 업데이트
+        }
+
+        let currentImageIndex = 0;
+
+        function showImage(index) {
+          images.forEach((img, idx) => {
+            img.classList.remove("active");
+            buttons[idx].classList.remove("on");
+
+            if (idx === index) {
+              img.classList.add("active");
+              buttons[idx].classList.add("on");
+            }
+          });
+        }
+
+        function nextImage() {
+          currentImageIndex = (currentImageIndex + 1) % images.length;
+          showImage(currentImageIndex);
+        }
+
+        showImage(currentImageIndex);
+        setInterval(nextImage, 2500);
+      </script>
+
+      <!-- slide 광고 -->
+
+      <!-- Group1_동네모임 -->
+      <div class="group1_left">
+        <p id="location">
+          <span class="location-text">의정부 1동</span> 근처 모임은 모혀?
+        </p>
+        <div class="group1_right">
+          <p id="c">
+            <a href="./group1_plus.html">
+              더보기
+              <img src="./img/home_rightarrow.png" width="18px" height="30px" />
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Group1_동네모임_사진 3개 모음 -->
+      <div class="group1_center">
+        <ul id="img" class="group1imgs">
+          <li>
+            <a href="../Content/content4.html">
+              <img
+                src="./img/21.png"
+                alt="img21"
+                width="
+              396.05px"
+                height="
+              460.6px"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="../Content/content5.html">
+              <img
+                src="./img/22.png"
+                alt="img22"
+                width="
+              396.05px"
+                height="
+              460.6px"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="../Content/content6.html">
+              <img
+                src="./img/23.png"
+                alt="img23"
+                width="
+              396.05px"
+                height="
+              460.6px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Group2_배움추천 -->
+      <div class="group2_left">
+        <p id="location">
+          <span class="location-text">오늘의 배움추천</span>은 모혀?
+        </p>
+        <div class="group2_right">
+          <p id="c">
+            <a href="./group2_plus.html">
+              더보기
+              <img src="./img/home_rightarrow.png" width="18px" height="30px" />
+            </a>
+          </p>
+        </div>
+      </div>
+
+      <!-- Group2_배움추천_사진 6개 모음 -->
+      <div class="group2_center1">
+        <ul id="img" class="group2imgs">
+          <li>
+            <a href="../Content/content7.html">
+              <img
+                src="./img/31.png"
+                alt="img31"
+                width="
+                620px"
+                height="
+              314.08px"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="../Content/content8.html">
+              <img
+                src="./img/32.png"
+                alt="img32"
+                width="
+                620px"
+                height="
+              314.08px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="group2_center2">
+        <ul id="img" class="group2imgs">
+          <li>
+            <a href="../Content/content9.html">
+              <img
+                src="./img/33.png"
+                alt="img33"
+                width="
+                620px"
+                height="
+              314.08px"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="../Content/content10.html">
+              <img
+                src="./img/34.png"
+                alt="img33"
+                width="
+                620px"
+                height="
+              314.08px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div class="group2_center3">
+        <ul id="img" class="group2imgs">
+          <li>
+            <a href="../Content/content11.html">
+              <img
+                src="./img/35.png"
+                alt="img35"
+                width="
+                620px"
+                height="
+              314.08px"
+              />
+            </a>
+          </li>
+          <li>
+            <a href="../Content/content12.html">
+              <img
+                src="./img/36.png"
+                alt="img36"
+                width="
+                620px"
+                height="
+              314.08px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <!-- Group3_카테고리 -->
+      <div class="group3_left">
+        <p id="location">이외에도 찾아봐유!</p>
+        <div class="group3_right"></div>
+      </div>
+
+      <!-- Group3_카테고리 버튼 -->
+      <div class="button-container">
+        <button class="button">전체</button>
+        <button class="button">취미</button>
+        <button class="button">관람</button>
+        <button class="button">공부</button>
+        <button class="button">귀농</button>
+        <button class="button">운동</button>
+      </div>
+
+      <hr />
+
+      <!-- Group3_카테고리 '전체' 이미지 위에 커서 올릴 시 색상 변경 -->
+      <div
+        class="group3_list1"
+        onmouseover="hoverImage1(true)"
+        onmouseout="hoverImage1(false)"
+      >
+        <ul id="img" class="group3imgs">
+          <li>
+            <a href="../Content/content13.html">
+              <img
+                id="img41"
+                src="./img/41.png"
+                alt="img41"
+                width="
+                  1283px"
+                height="
+                115px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="group3_list2"
+        onmouseover="hoverImage2(true)"
+        onmouseout="hoverImage2(false)"
+      >
+        <ul id="img" class="group3imgs">
+          <li>
+            <a href="../Content/content14.html">
+              <img
+                id="img42"
+                src="./img/42.png"
+                alt="img42"
+                width="
+                1283px"
+                height="
+              115px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="group3_list3"
+        onmouseover="hoverImage3(true)"
+        onmouseout="hoverImage3(false)"
+      >
+        <ul id="img" class="group3imgs">
+          <li>
+            <a href="../Content/content15.html">
+              <img
+                id="img43"
+                src="./img/43.png"
+                alt="img43"
+                width="
+                1283px"
+                height="
+              115px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="group3_list4"
+        onmouseover="hoverImage4(true)"
+        onmouseout="hoverImage4(false)"
+      >
+        <ul id="img" class="group3imgs">
+          <li>
+            <a href="../Content/content16.html">
+              <img
+                id="img44"
+                src="./img/44.png"
+                alt="img44"
+                width="
+                  1283px"
+                height="
+                115px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script src="groups_home.js"></script>
+  </body>
+</html>

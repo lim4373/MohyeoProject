@@ -1,0 +1,116 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="profile_style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>MOHYEO</title>
+  </head>
+  <!-- <body style="overflow-x: hidden"> -->
+
+  <body>
+    <!-- 네비게이션 바  -->
+    <header class="header">
+      <a href="../Home/groups_home.html">
+        <div class="header_logo">
+          <img
+            src="./img/profile_logo.png"
+            alt="MOHYEO"
+            width="164px"
+            height="26px"
+          />
+        </div>
+      </a>
+
+      <ul class="header_menu">
+        <li><a href="../Home/groups_home.html" class="groups">모임들</a></li>
+        <li>
+          <a href="../MyGroupHome/mygroup_home.html" class="mygroup">내모임</a>
+        </li>
+        <li>
+          <a href="../Calendar/calendar_home.html" class="calendar">캘린더</a>
+        </li>
+      </ul>
+
+      <div class="header_search">
+        <form>
+          <input type="search" placeholder="     search" />
+        </form>
+      </div>
+
+      <div class="header_profile">
+        <a href="./profile.html">
+          <img
+            src="./img/profile_profile.png"
+            alt="Profile"
+            width="44px"
+            height="44px"
+          />
+        </a>
+      </div>
+    </header>
+
+    <section class="profile_block">
+      <div class="profile">
+        <img src="img/userImg.png" alt="유저 프로필 사진" id="user_img" />
+
+        <div class="user_info">
+          <p id="user_id">아이디</p>
+          <p id="user_birth">생년월일</p>
+
+          <a href="profile2.html">
+            <button id="user_edit">프로필 편집</button>
+          </a>
+        </div>
+      </div>
+
+      <div class="signMeet_block">
+        <div class="meets">
+          <p id="sign_subject">가입한 모임</p>
+          <a href="../MyGroupHome/mygroup_home_text.html">
+            <img src="img/meet1.png" id="sign_meet" alt="가입한 모임" />
+          </a>
+        </div>
+
+        <div class="sign_pusher"></div>
+      </div>
+
+      <div class="post_block">
+        <div class="meets2">
+          <p id="post_subject">내 쪽지함 0</p>
+        </div>
+
+        <div class="sign_pusher2"></div>
+      </div>
+
+      <!-- footer 선 -->
+    </section>
+
+    <hr id="div_line" />
+
+    <footer>
+      <div class="service">
+        <p id="use_info">이용약관</p>
+        <hr id="div1" />
+        <p id="private_info">개인정보처리방침</p>
+        <hr id="div1" />
+        <p id="logout">로그아웃</p>
+      </div>
+
+      <div class="copyright">
+        <img
+          src="img/Mlogo.png"
+          href="../Home/groups_home.html"
+          id="copyright_img"
+        />
+
+        <p id="copyright_ment">Copyright . Mohyeo Corp. All Rights Reserved.</p>
+      </div>
+    </footer>
+  </body>
+</html>

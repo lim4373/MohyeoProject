@@ -1,0 +1,311 @@
+/* All */
+* {
+  font-family: Pretendard, "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+  /* margin: 0 auto; */
+}
+
+/* 전체 너비 */
+body {
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  /* 모든 요소를 가운데에 고정 */
+}
+
+/* header {
+  position: fixed;
+} */
+
+.header {
+  /*   요소가 여러 개일때사용 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 요소가 하나일때 */
+  text-align: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 204px;
+  /* position: relative; */
+  padding: 0px 317px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* 네비게이션 로고 스타일 */
+.header_logo {
+  /* position: absolute;
+  top: 121px;
+  left: 317px; */
+  text-align: center;
+  width: 164px;
+  height: 26px;
+}
+
+/* 네비게이션 메뉴 스타일 */
+.header_menu {
+  display: flex;
+  list-style: none;
+  /* 리스트 앞에 있는 점 없애기 */
+  padding-left: 0;
+  /*  position: absolute;
+  top: 116px;
+  left: 551px; */
+  text-align: center;
+  margin: 0px;
+  margin-left: 70px;
+}
+
+.groups:hover {
+  color: #ea5e6e;
+}
+.mygroup:hover {
+  color: #ea5e6e;
+}
+.calendar:hover {
+  color: #ea5e6e;
+}
+.groups {
+  color: #ea5e6e;
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+
+.mygroup {
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+  color: #242424;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+
+.calendar {
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+  color: #242424;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+
+.header_menu li {
+  margin: 0px 18px;
+}
+
+/* 네비게이션 검색 스타일 */
+.header_search {
+  /* position: absolute;
+  top: 109px;
+  left: 1216px; */
+  text-align: center;
+  width: 306px;
+  height: 45px;
+  font-family: Pretendard;
+  background: #eeeeee;
+  border-radius: 22.5px;
+  list-style: none;
+  display: flex;
+  margin-left: 316px;
+}
+
+.header_search > form > input {
+  border: none;
+  width: 306px;
+  height: 45px;
+  font-size: 18px;
+  font-family: Pretendard;
+  background: #eeeeee;
+  color: #5b5b5b;
+  outline: none;
+  border-radius: 68px;
+  padding-right: 10px;
+}
+
+.header_profile {
+  /* position: absolute;
+  top: 110px;
+  left: 1543px; */
+  text-align: center;
+  margin-left: 26px;
+}
+/* 여기까지 header파트 이 위는 건들지 말기!!! */
+
+/* Group1_동네모임 더보기 화면 */
+.group2_left {
+  /*   요소가 여러 개일때사용 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 요소가 하나일때 */
+  /* text-align: center; */
+  width: 100%;
+  height: 360px;
+  padding-top: 304px;
+  padding-left: 280px;
+  padding-right: 270px;
+  background-color: white;
+  z-index: 1000;
+  text-align: center;
+  /* padding-top: 140px;
+      padding-left: 311px;
+      padding-right: 311px; */
+}
+
+.group2_left > #c {
+  margin: 0px;
+}
+
+.group2_left > #c > a > #arrow {
+  text-align: center;
+  margin-right: 43px;
+  /* padding-right: 0px; */
+}
+
+.group2_left > #location {
+  /* 글꼴 선정 */
+  color: #242424;
+  font-family: Pretendard;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135.5%;
+  letter-spacing: -1.44px;
+  /* 위치 선정 */
+  padding-top: 0px;
+  padding-left: 0px;
+  margin-right: 0px;
+  margin: 0px;
+  text-align: center;
+}
+.group2_left > #location > .location-text {
+  color: #ea5e6e;
+  font-family: Pretendard;
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135.5%;
+  letter-spacing: -1.44px;
+}
+
+.group2_left > #d {
+  margin: 0px;
+}
+.group2_left > #d > a > #sound {
+  text-align: center;
+  margin-left: 22px;
+  /* padding-right: 0px; */
+}
+
+.group2_right {
+  width: 700px;
+  height: 48px;
+  /* 화면 비율 바뀌어도 가운데로 고정 */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  text-align: center;
+}
+
+/* Group2_동네모임_사진 3개 모음 */
+.group2_list1 {
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.group2_list1 > ul {
+  display: flex;
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.group2_list1 > ul > li {
+  margin-top: 125px;
+  margin-left: 322px;
+  margin-right: 322px;
+  list-style: none;
+}
+
+.group2_list2 {
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.group2_list2 > ul {
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.group2_list2 > ul > li {
+  margin-top: 25px;
+  margin-left: 322px;
+  margin-right: 322px;
+  list-style: none;
+}
+
+.group2_list3 {
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+}
+
+.group2_list3 > ul {
+  justify-content: center;
+  padding-top: 0px;
+  padding-left: 0px;
+  padding-right: 0px;
+  margin: 0px;
+  padding: 0px;
+}
+
+.group2_list3 > ul > li {
+  margin-top: 25px;
+  margin-left: 322px;
+  margin-right: 322px;
+  margin-bottom: 100px;
+  list-style: none;
+}

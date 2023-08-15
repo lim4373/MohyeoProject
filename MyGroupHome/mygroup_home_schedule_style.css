@@ -1,0 +1,724 @@
+/* All */
+* {
+  font-family: Pretendard, "Noto Sans KR", sans-serif;
+  box-sizing: border-box;
+  /* margin: 0 auto; */
+}
+
+/* 전체 너비 */
+body {
+  margin: 0px;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  min-height: 100vh;
+  margin: 0;
+  /* 모든 요소를 가운데에 고정 */
+}
+
+/* header {
+  position: fixed;
+} */
+
+.header {
+  /*   요소가 여러 개일때사용 */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* 요소가 하나일때 */
+  text-align: center;
+  background-color: #ffffff;
+  width: 100%;
+  height: 204px;
+  /* position: relative; */
+  padding: 0px 317px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  z-index: 1000;
+}
+
+/* 네비게이션 로고 스타일 */
+.header_logo {
+  /* position: absolute;
+  top: 121px;
+  left: 317px; */
+  text-align: center;
+  width: 164px;
+  height: 26px;
+}
+
+/* 네비게이션 메뉴 스타일 */
+.header_menu {
+  display: flex;
+  list-style: none;
+  /* 리스트 앞에 있는 점 없애기 */
+  padding-left: 0;
+  /*  position: absolute;
+  top: 116px;
+  left: 551px; */
+  text-align: center;
+  margin: 0px;
+  margin-left: 70px;
+}
+
+.groups:hover {
+  color: #ea5e6e;
+}
+.mygroup:hover {
+  color: #ea5e6e;
+}
+.calendar:hover {
+  color: #ea5e6e;
+}
+.groups {
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+  color: #242424;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+
+.mygroup {
+  color: #ea5e6e;
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+
+.calendar {
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+  color: #242424;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 30px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.9px;
+}
+
+.header_menu li {
+  margin: 0px 18px;
+}
+
+/* 네비게이션 검색 스타일 */
+.header_search {
+  /* position: absolute;
+  top: 109px;
+  left: 1216px; */
+  text-align: center;
+  width: 306px;
+  height: 45px;
+  font-family: Pretendard;
+  background: #eeeeee;
+  border-radius: 22.5px;
+  list-style: none;
+  display: flex;
+  margin-left: 316px;
+}
+
+.header_search > form > input {
+  border: none;
+  width: 306px;
+  height: 45px;
+  font-size: 18px;
+  font-family: Pretendard;
+  background: #eeeeee;
+  color: #5b5b5b;
+  outline: none;
+  border-radius: 68px;
+  padding-right: 10px;
+}
+
+.header_profile {
+  /* position: absolute;
+  top: 110px;
+  left: 1543px; */
+  text-align: center;
+  margin-left: 26px;
+}
+/* 여기까지 header파트 이 위는 건들지 말기!!! */
+
+/* 여기서부터 navigationbar css 설정 */
+.nav {
+  /*   요소가 여러 개일때사용 */
+  /* display: flex; */
+  justify-content: center;
+  align-items: top;
+  /* 요소가 하나일때 */
+  text-align: center;
+  background-color: #ea5e6e;
+  width: 100%;
+  height: 94px;
+  top: 204px;
+  position: fixed;
+  z-index: 1;
+}
+
+.navigationbar {
+  width: 100%;
+  height: 83px;
+  margin: 0px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  background-color: #ea5e6e;
+  padding: 0px 607px;
+  /* position: fixed;*/
+}
+
+.navigationbar > li {
+  list-style: none;
+  /* 리스트 앞에 있는 점 없애기 */
+}
+
+.navigationbar > li > a {
+  list-style: none;
+  /* 리스트 앞에 있는 점 없애기 */
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+}
+
+.navigationbar2 > .underline {
+  height: 11px;
+  background-color: #ea5e6e;
+  margin-left: 245px;
+}
+
+.text {
+  /* 글씨 설정 */
+  color: #ffd2d2;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.84px;
+  padding-right: 150px;
+}
+
+.photo {
+  /* 글씨 설정 */
+  color: #ffd2d2;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.84px;
+  padding-right: 150px;
+}
+
+.schedule {
+  /* 글씨 설정 */
+  color: #fff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 800;
+  line-height: normal;
+  letter-spacing: -0.84px;
+  padding-right: 150px;
+}
+
+.member {
+  /* 글씨 설정 */
+  color: #ffd2d2;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 28px;
+  font-style: normal;
+  font-weight: 600;
+  line-height: normal;
+  letter-spacing: -0.84px;
+}
+/* 여기 위는 건들지 말기!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!!! */
+
+/* 게시판  세부사항 */
+.tip {
+  /*   요소가 여러 개일때사용 */
+  display: flex;
+  justify-content: center;
+  align-items: top;
+  width: 100%;
+  height: 1200px;
+  padding-top: 374px;
+  margin: 0px;
+}
+
+.tip > #left {
+  margin: 0px;
+  padding-right: 40px;
+  text-align: center;
+  margin-right: 1290px;
+  position: fixed;
+}
+
+.tip > #right {
+  margin: 0px;
+  padding-left: 40px;
+  text-align: center;
+  margin-left: 1290px;
+  position: fixed;
+}
+
+.tip > .d {
+  margin: 0px;
+  width: 860px;
+  z-index: 0;
+}
+
+.tip > #left > .button1 {
+  /* 버튼 규격 */
+  width: 405px;
+  height: 77px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #ea5e6e;
+  text-align: center;
+  margin-top: 30px;
+  display: table;
+}
+
+.tip > #left > .button1 > .invite {
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+  text-align: center;
+  /* 글씨 설정 */
+  color: #ffffff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135.5%; /* 43.36px */
+  letter-spacing: -0.96px;
+}
+
+.tip > #left > .button2 {
+  /* 버튼 규격 */
+  width: 405px;
+  height: 77px;
+  flex-shrink: 0;
+  border-radius: 12px;
+  background: #ea5e6e;
+  text-align: center;
+  margin-top: 13px;
+  display: table;
+}
+
+.tip > #left > .button2 > .up-sche {
+  display: table-cell;
+  vertical-align: middle;
+  text-decoration: none;
+  /* 주소 넣었을 때 생기는 밑줄 삭제 */
+  text-align: center;
+  /* 글씨 설정 */
+  color: #ffffff;
+  text-align: center;
+  font-family: Pretendard;
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 700;
+  line-height: 135.5%; /* 43.36px */
+  letter-spacing: -0.96px;
+}
+
+/* calender 부분 */
+
+#calender {
+  z-index: 1;
+}
+
+.calendar_schedule {
+  padding-top: 50px;
+  padding-bottom: 150px;
+}
+
+.fc-toolbar-chunk {
+  display: flex;
+  align-items: center;
+}
+
+.fc-toolbar-title {
+  font-size: 30px;
+  font-weight: 600;
+}
+
+.fc-header-toolbar .fc-button {
+  font-size: 20px;
+  /* 원하는 크기로 조절 */
+  font-weight: 700;
+}
+
+.fc .fc-button-primary {
+  background-color: var(--fc-button-bg-color);
+  border-color: var(--fc-button-border-color);
+  color: var(--fc-button-text-color);
+}
+
+.fc .fc-button {
+  border-radius: 68px;
+}
+
+:root {
+  --fc-small-font-size: 0.85em;
+  --fc-page-bg-color: #fff;
+  --fc-neutral-bg-color: hsla(0, 0%, 82%, 0.3);
+  --fc-neutral-text-color: grey;
+  --fc-border-color: #ddd;
+  --fc-button-text-color: #fff;
+  --fc-button-bg-color: #ea5e6e;
+  --fc-button-border-color: #ffffff;
+  --fc-button-hover-bg-color: #f18e9a;
+  --fc-button-hover-border-color: #ffffff;
+  --fc-button-active-bg-color: #f18e9a;
+  --fc-button-active-border-color: #ffffff;
+  --fc-event-bg-color: #00c6a3;
+  --fc-event-border-color: #00c6a3;
+  --fc-event-text-color: #fff;
+  --fc-event-selected-overlay-color: rgba(0, 0, 0, 0.25);
+  --fc-more-link-bg-color: #d0d0d0;
+  --fc-more-link-text-color: inherit;
+  --fc-event-resizer-thickness: 8px;
+  --fc-event-resizer-dot-total-width: 8px;
+  --fc-event-resizer-dot-border-width: 1px;
+  --fc-non-business-color: hsla(0, 0%, 84%, 0.3);
+  --fc-bg-event-color: #8fdf82;
+  --fc-bg-event-opacity: 0.3;
+  --fc-highlight-color: rgba(188, 232, 241, 0.3);
+  --fc-today-bg-color: #f3cdd2;
+  --fc-now-indicator-color: red;
+}
+
+.calendar_index {
+  display: flex;
+  justify-content: left;
+  margin-top: 62px;
+
+  text-align: center;
+  width: 1273px;
+  height: 125px;
+  border-radius: 20px;
+  border: 1px solid #ea5e6e;
+  background-color: #ea5e6e;
+}
+#selectedDate {
+  margin-left: 40px;
+  margin-top: 46px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+}
+#selectedInfo {
+  margin-left: 100px;
+  margin-top: 46px;
+  font-size: 30px;
+  font-weight: 600;
+  color: #ffffff;
+}
+
+#overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(0, 0, 0, 0.7); /* 어두운 배경 색상과 투명도 설정 */
+  display: none;
+  z-index: 1001; /* 팝업창보다 뒤에 위치하도록 설정 */
+}
+
+.popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 1003px;
+  height: 884px;
+  border-radius: 36px;
+  border: 2px solid #c6c6c6;
+  background-color: white;
+  z-index: 1002; /* 오버레이보다 위에 위치하도록 설정 */
+}
+
+.popup > .popup-nav {
+  display: flex;
+  justify-content: right;
+  margin-bottom: 55px;
+}
+.popup > .popup-nav > p {
+  margin-top: 47px;
+  text-align: center;
+
+  font-size: 30px;
+  font-weight: 500;
+  color: #000000;
+}
+.popup > .popup-nav > #x-button {
+  margin-top: 52px;
+  margin-right: 63px;
+  margin-left: 344px;
+  cursor: pointer;
+}
+
+.popup > .section1 {
+  text-align: center;
+
+  margin-bottom: 34px;
+}
+.popup > .section1 > p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+
+  text-align: left;
+  margin-left: 58px;
+
+  margin-right: 15px;
+}
+.popup > .section1 > input {
+  width: 899px;
+  height: 80px;
+
+  border: 1px solid #c6c6c6;
+  border-radius: 20px;
+}
+.popup > .section1 > input[type="text"] {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+
+  text-align: center;
+}
+
+.popup > .section2 {
+  text-align: center;
+
+  margin-bottom: 34px;
+}
+.popup > .section2 > p {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+
+  text-align: left;
+  margin-left: 58px;
+
+  margin-right: 15px;
+}
+.popup > .section2 > input {
+  width: 899px;
+  height: 189px;
+
+  border: 1px solid #c6c6c6;
+  border-radius: 20px;
+}
+.popup > .section2 > input[type="text"] {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+
+  text-align: center;
+}
+
+.popup > .section3 {
+  display: flex;
+  justify-content: center;
+
+  margin-bottom: 34px;
+}
+.popup > .section3 > .place {
+  margin-top: 0px;
+}
+.popup > .section3 > .place > p {
+  margin-top: 0px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+
+  text-align: left;
+
+  margin-right: 15px;
+}
+.popup > .section3 > .place > input {
+  width: 357px;
+  height: 80px;
+
+  border: 1px solid #c6c6c6;
+  border-radius: 20px;
+}
+.popup > .section3 > .place > input[type="text"] {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+
+  text-align: center;
+}
+
+.popup > .section3 > .time {
+  margin-left: 31px;
+  margin-top: 0px;
+}
+.popup > .section3 > .time > p {
+  margin-top: 0px;
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+
+  text-align: left;
+
+  margin-right: 15px;
+}
+.popup > .section3 > .time > input {
+  width: 511px;
+  height: 80px;
+
+  border: 1px solid #c6c6c6;
+  border-radius: 20px;
+}
+.popup > .section3 > .time > input[type="text"] {
+  font-size: 24px;
+  font-weight: 500;
+  color: #000000;
+
+  text-align: center;
+}
+
+.popup > .confirm-section {
+  text-align: center;
+}
+
+.active {
+  margin-bottom: 66px;
+
+  width: 895px;
+  height: 73px;
+  background-color: #ea5e6e;
+  border: 0px;
+  border-radius: 15px;
+
+  font-size: 30px;
+  font-weight: 500;
+  color: #ffffff;
+  cursor: pointer;
+}
+.disabled {
+  margin-bottom: 66px;
+
+  width: 895px;
+  height: 73px;
+  background-color: #d9d9d9;
+  border: 0px;
+  border-radius: 15px;
+
+  font-size: 30px;
+  font-weight: 500;
+  color: #000000;
+}
+
+/* 초대하기 팝업 */
+.invite-popup {
+  display: none;
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  width: 305px;
+  height: 223px;
+  border-radius: 36px;
+  border: 2px solid #c6c6c6;
+  background-color: white;
+}
+
+.invite-popup > .invite-nav {
+  display: flex;
+  justify-content: right;
+  height: 50px;
+  margin-bottom: 22.73px;
+}
+
+.invite-popup > .invite-nav > p {
+  margin-top: 28px;
+  text-align: center;
+
+  font-size: 24px;
+  font-weight: 500;
+  color: #242424;
+}
+.invite-popup > .invite-nav > #invite-x-button {
+  margin-top: 28px;
+  margin-right: 35px;
+  margin-left: 55px;
+
+  margin-top: 32px;
+  cursor: pointer;
+}
+.invite-popup > .invite-main {
+  display: flex;
+  justify-content: center;
+  margin-top: 0px;
+  margin-bottom: 15.63px;
+}
+.invite-popup > .invite-main > a > #main2 {
+  margin-left: 5.7px;
+}
+.invite-popup > .invite-main > a > #main3 {
+  margin-left: 5.7px;
+}
+.invite-popup > .invite-main > a > #main4 {
+  margin-left: 5.7px;
+}
+.invite-popup > .invite-urlset {
+  display: flex;
+  justify-content: center;
+}
+.invite-popup > .invite-urlset > #url {
+  width: 138px;
+  height: 50px;
+
+  border: 0.5px solid #777777;
+  border-radius: 15px 0px 0px 15px;
+
+  font-size: 20px;
+  font-weight: 500;
+  color: #777777;
+
+  text-align: center;
+}
+.invite-popup > .invite-urlset > #copy-button {
+  width: 110px;
+  height: 50px;
+
+  border: 0.5px solid #777777;
+  border-radius: 0px 15px 15px 0px;
+
+  background-color: #ffffff;
+  font-size: 20px;
+  font-weight: 500;
+  color: #777777;
+
+  cursor: pointer;
+}

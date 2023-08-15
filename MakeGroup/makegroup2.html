@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./makegroup2_style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>MOHYEO</title>
+  </head>
+
+  <body style="overflow-x: hidden">
+    <!-- 네비게이션 바  -->
+    <header class="header">
+      <a href="../Home/groups_home.html">
+        <div class="header_logo">
+          <img
+            src="./img/makegroup_logo.png"
+            alt="MOHYEO"
+            width="164px"
+            height="26px"
+          />
+        </div>
+      </a>
+
+      <ul class="header_menu">
+        <li>
+          <a href="../Home/groups_home.html" class="groups">모임들</a>
+        </li>
+        <li>
+          <a href="../MyGroupHome/mygroup_home.html" class="mygroup">내모임</a>
+        </li>
+        <li>
+          <a href="../Calendar/calendar_home.html" class="calendar">캘린더</a>
+        </li>
+      </ul>
+
+      <div class="header_search">
+        <form>
+          <input type="search" placeholder="     search" />
+        </form>
+      </div>
+
+      <div class="header_profile">
+        <a href="../Profile/profile.html">
+          <img
+            src="./img/makegroup_profile.png"
+            alt="Profile"
+            width="44px"
+            height="44px"
+          />
+        </a>
+      </div>
+    </header>
+
+    <div class="group_left">
+      <p id="c">
+        <a href="./makegroup.html">
+          <img
+            id="arrow"
+            src="./img/makegroup_leftarrow.png"
+            width="18px"
+            height="30px"
+          />
+        </a>
+      </p>
+      <p id="location">모임 만들기</p>
+      <div class="group_right">
+        <p id="c"></p>
+      </div>
+    </div>
+
+    <div class="section1">
+      <div class="pusher1"></div>
+      <div class="real">
+        <p id="section1_info">모임 이름을 작성해주세요.</p>
+        <input type="text" id="section1_write" />
+      </div>
+    </div>
+
+    <div class="section2">
+      <div class="pusher2"></div>
+      <div class="real">
+        <p id="section2_info">지역을 작성해주세요.</p>
+        <input type="text" id="section2_write" />
+      </div>
+    </div>
+
+    <div class="section3">
+      <div class="pusher3"></div>
+      <div class="real">
+        <p id="section3_info">모임을 소개해주세요.</p>
+        <input type="text" id="section3_write" />
+      </div>
+    </div>
+
+    <div class="section4">
+      <div class="pusher4"></div>
+      <div class="real">
+        <p id="section4_info">이외의 모임 종류를 분류해주세요.</p>
+        <input type="text" id="section4_write" />
+      </div>
+    </div>
+
+    <div class="section5">
+      <div class="pusher5"></div>
+      <p id="section5_info">인원을 알려주세요 (~30명)</p>
+      <input
+        type="text"
+        id="section5_write"
+        oninput="this.value=this.value.replace(/[^0-9.]/g, '').replace(/(\..*)\./g, '$1');"
+      />
+    </div>
+
+    <div class="btn">
+      <div class="pusher5"></div>
+
+      <button type="submit" id="finalBtn" class="disabled" disabled="true">
+        모임 만들기
+      </button>
+    </div>
+
+    <div id="popup" class="popup">
+      <p>목적에 맞는 모임이<br />활성화되도록 노력해주세요.</p>
+      <button id="confirm">
+        <a href="../MyGroupHome/mygroup_home.html"> 확인하기 </a>
+      </button>
+    </div>
+
+    <script src="makegroup2_script.js"></script>
+  </body>
+</html>

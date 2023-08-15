@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./mygroup_home_style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>MOHYEO</title>
+  </head>
+  <!-- <body style="overflow-x: hidden"> -->
+
+  <body>
+    <!-- 네비게이션 바  -->
+    <header class="header">
+      <a href="../Home/groups_home.html">
+        <div class="header_logo">
+          <img
+            src="./img/mygrouphome_logo.png"
+            alt="MOHYEO"
+            width="164px"
+            height="26px"
+          />
+        </div>
+      </a>
+
+      <ul class="header_menu">
+        <li><a href="../Home/groups_home.html" class="groups">모임들</a></li>
+        <li><a href="./mygroup_home.html" class="mygroup">내모임</a></li>
+        <li>
+          <a href="../Calendar/calendar_home.html" class="calendar">캘린더</a>
+        </li>
+      </ul>
+
+      <div class="header_search">
+        <form>
+          <input type="search" placeholder="     search" />
+        </form>
+      </div>
+
+      <div class="header_profile">
+        <a href="../Profile/profile.html">
+          <img
+            src="./img/mygrouphome_profile.png"
+            alt="Profile"
+            width="44px"
+            height="44px"
+          />
+        </a>
+      </div>
+    </header>
+
+    <div class="groupset">
+      <div class="groupset-subject">
+        <p>내 모임은 모혀?</p>
+        <img src="img/sound.png" id="sound1" width="52px" height="52px" />
+      </div>
+      <div class="mygroup-main">
+        <a href="../MakeGroup/makegroup.html">
+          <img src="img/makegroup.png" id="make" width="288px" height="291px" />
+        </a>
+
+        <a href="mygroup_home_text.html">
+          <img src="img/group1.png" id="group1" width="288px" height="291px" />
+        </a>
+      </div>
+    </div>
+
+    <div class="near-groupset">
+      <div class="near-subject">
+        <p>가까운 일정은 모혀?</p>
+        <img src="img/sound.png" id="sound2" width="52px" height="52px" />
+      </div>
+      <div class="near-main">
+        <a href="mygroup_home_text.html">
+          <img src="img/near.png" id="near" width="288px" height="291px" />
+        </a>
+      </div>
+    </div>
+
+    <div class="text-groupset">
+      <div class="text-subject">
+        <p>게시판으로 모혀!</p>
+        <img src="img/sound.png" id="sound3" width="52px" height="52px" />
+      </div>
+      <div class="text-main">
+        <a href="mygroup_home_text.html">
+          <img src="img/mohang.png" id="mohang" />
+        </a>
+      </div>
+      <div class="text-main2">
+        <a href="mygroup_home_text.html">
+          <img src="img/zigme.png" id="zigme" />
+        </a>
+      </div>
+      <div class="text-main3">
+        <a href="mygroup_home_text.html">
+          <img src="img/mohaemi.png" id="mohaemi" />
+        </a>
+      </div>
+    </div>
+
+    <script src="mygroup_home_script.js"></script>
+  </body>
+</html>

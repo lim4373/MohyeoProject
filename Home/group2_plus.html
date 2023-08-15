@@ -1,0 +1,224 @@
+<!DOCTYPE html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="./group2_plus_style.css" />
+    <link
+      rel="stylesheet"
+      type="text/css"
+      href="https://cdn.jsdelivr.net/gh/orioncactus/pretendard/dist/web/static/pretendard.css"
+    />
+    <title>MOHYEO</title>
+  </head>
+
+  <body style="overflow-x: hidden">
+    <!-- 네비게이션 바  -->
+    <header class="header">
+      <a href="./groups_home.html">
+        <div class="header_logo">
+          <img
+            src="./img/home_logo.png"
+            alt="MOHYEO"
+            width="164px"
+            height="26px"
+          />
+        </div>
+      </a>
+
+      <ul class="header_menu">
+        <li>
+          <a href="./groups_home.html" class="groups">모임들</a>
+        </li>
+        <li>
+          <a href="../MyGroupHome/mygroup_home.html" class="mygroup">내모임</a>
+        </li>
+        <li>
+          <a href="../Calendar/calendar_home.html" class="calendar">캘린더</a>
+        </li>
+      </ul>
+
+      <div class="header_search">
+        <form>
+          <input type="search" placeholder="     search" />
+        </form>
+      </div>
+
+      <div class="header_profile">
+        <a href="../Profile/profile.html">
+          <img
+            src="./img/home_profile.png"
+            alt="Profile"
+            width="44px"
+            height="44px"
+          />
+        </a>
+      </div>
+    </header>
+
+    <section>
+      <!-- Group1_동네모임 더보기 화면 -->
+      <div class="group2_left">
+        <p id="c">
+          <a href="./groups_home.html">
+            <img
+              id="arrow"
+              src="./img/home_leftarrow.png"
+              width="18px"
+              height="30px"
+            />
+          </a>
+        </p>
+        <p id="location">
+          <span class="location-text">오늘의 배움추천</span>은 모혀?
+        </p>
+        <p id="d">
+          <a href="#">
+            <img
+              id="sound"
+              src="./img/home_soundpic.png"
+              width="52px"
+              height="52px"
+            />
+          </a>
+        </p>
+        <div class="group2_right">
+          <p id="c"></p>
+        </div>
+      </div>
+
+      <!-- Group1_동네모임 더보기 화면 사진 4가지 -->
+      <div
+        class="group2_list1"
+        onmouseover="hoverImage1(true)"
+        onmouseout="hoverImage1(false)"
+      >
+        <ul id="img" class="group1imgs">
+          <li>
+            <a href="../Content/content7.html">
+              <img
+                id="img61"
+                src="./img/61.png"
+                alt="img61"
+                width="
+                  1283px"
+                height="
+                115px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+      <div
+        class="group2_list2"
+        onmouseover="hoverImage2(true)"
+        onmouseout="hoverImage2(false)"
+      >
+        <ul id="img" class="group1imgs">
+          <li>
+            <a href="../Content/content8.html">
+              <img
+                id="img62"
+                src="./img/62.png"
+                alt="img62"
+                width="
+                1283px"
+                height="
+              115px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+
+      <div
+        class="group2_list3"
+        onmouseover="hoverImage3(true)"
+        onmouseout="hoverImage3(false)"
+      >
+        <ul id="img" class="group1imgs">
+          <li>
+            <a href="../Content/content9.html">
+              <img
+                id="img63"
+                src="./img/63.png"
+                alt="img63"
+                width="
+                  1283px"
+                height="
+                115px"
+              />
+            </a>
+          </li>
+        </ul>
+      </div>
+    </section>
+    <script>
+      function startSectionSpeech(sectionId, text) {
+        const utterance = new SpeechSynthesisUtterance(text);
+        const section = document.getElementById(sectionId);
+
+        // 음성 재생
+        speechSynthesis.speak(utterance);
+      }
+
+      document.getElementById("sound").addEventListener("click", function () {
+        const sectionId = "sound";
+        const text =
+          "오늘의 배움추천은 모혀? 키오스크 사용 도와드릴게요!, 기타 한 번 쳐보실래요?, 은행 어플 사용 방법 알려드릴게요! 등이 있습니다.";
+
+        startSectionSpeech(sectionId, text);
+      });
+
+      var isHovered = false;
+
+      function hoverImage1(enter) {
+        var image = document.getElementById("img61");
+        if (enter) {
+          if (!isHovered) {
+            isHovered = true;
+            image.src = "./img/64.png";
+          }
+        } else {
+          if (isHovered) {
+            isHovered = false;
+            image.src = "./img/61.png";
+          }
+        }
+      }
+
+      var isHovered = false;
+
+      function hoverImage2(enter) {
+        var image = document.getElementById("img62");
+        if (enter) {
+          if (!isHovered) {
+            isHovered = true;
+            image.src = "./img/65.png";
+          }
+        } else {
+          if (isHovered) {
+            isHovered = false;
+            image.src = "./img/62.png";
+          }
+        }
+      }
+      var isHovered = false;
+
+      function hoverImage3(enter) {
+        var image = document.getElementById("img63");
+        if (enter) {
+          if (!isHovered) {
+            isHovered = true;
+            image.src = "./img/66.png";
+          }
+        } else {
+          if (isHovered) {
+            isHovered = false;
+            image.src = "./img/63.png";
+          }
+        }
+      }
+    </script>
+  </body>
+</html>

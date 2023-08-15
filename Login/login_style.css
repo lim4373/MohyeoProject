@@ -1,0 +1,187 @@
+
+@font-face {
+    font-family: 'Pretendard-Regular';
+    src: url('https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
+* {
+    font-family: 'Pretendard-Regular';
+}
+
+body { min-height: 100%; }
+
+#logo {
+    margin-top: 134px;
+    text-align: center;
+}
+
+
+.bar {
+    display:flex;
+    justify-content: center;
+    margin-top: 87px;
+}
+
+
+
+.bar > #progress {
+    appearance: none;
+    width:635px;
+    height:35px;
+}
+.bar > #progress::-webkit-progress-bar {
+    width:635px;
+    height:35px;
+    border-radius: 20px;
+    background-color: #D9D9D9;
+}
+.bar > #progress::-webkit-progress-value {
+    border-radius: 20px;
+    background-color: #EA5E6E;
+}
+
+.stat {
+    margin-left: 35px;
+}
+.stat > b {
+    font-size: 24px;
+    font-weight: 700;
+    color: #9E9E9E;
+}
+
+
+.infor  {
+    margin-top: 51px;
+    display:flex;
+    justify-content: center;
+}
+.infor > .pBox > .p1 {
+    margin-top: 0px;
+    margin-bottom: 0px;
+    font-size: 24px;
+    font-weight: 700;
+    color: #4E4E4E;
+}
+.infor > .pBox > .p2 {
+    margin-top: 10px;
+    margin-bottom: 0px;
+    font-size: 20px;
+    font-weight: 400;
+    color: #787878;
+}
+.infor > .empty1 {
+    margin-left: 350px;
+}
+
+.userInput {
+    text-align: center;
+    margin-top: 36px;
+}
+
+
+
+.userInput > .numberSubject > p {
+    margin-top: 0px;
+    margin-bottom: 25px;
+    font-size: 20px;
+    font-weight: 700;
+    color: #4E4E4E;
+}
+.userInput > #Num {
+    width: 709px;
+    height: 69px;
+    border-radius: 12px;
+    border: 1px solid #B9B9B9;
+}
+::placeholder {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+.userInput > #Num[type="text"] {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+.IDKey {
+    text-align: center;
+    margin-top: 25px;
+    
+}
+.IDKey > #Key {
+    width: 709px;
+    height: 69px;
+    border-radius: 12px;
+    border: 1px solid #B9B9B9;
+}
+::placeholder {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: left;
+}
+.IDKey > #Key[type="text"] {
+    font-size: 20px;
+    font-weight: 600;
+    text-align: center;
+}
+
+
+.numberSubject {
+    display:flex;
+    justify-content: center;
+}
+.numberSubject > .empty2 {
+    margin-left: 580px;
+}
+
+.btn {
+    text-align: center;
+}
+
+/* .btn > #codeBtn {
+    text-align: center;
+    margin-top: 39px;
+    width: 709px;
+    height: 69px;
+    border: 0px;
+    border-radius: 41px;
+    background-color: #D9D9D9;
+
+    font-size: 26px;
+    color:#242424;
+    font-weight: 700;
+    align-content: center;
+} */
+
+.disabled {
+    text-align: center;
+    margin-top: 39px;
+    width: 709px;
+    height: 69px;
+    border: 0px;
+    border-radius: 41px;
+    background-color: #D9D9D9;
+
+    font-size: 26px;
+    color:#242424;
+    font-weight: 700;
+    align-content: center;
+}
+
+.active {
+    text-align: center;
+    margin-top: 39px;
+    width: 709px;
+    height: 69px;
+    border: 0px;
+    border-radius: 41px;
+    background-color: #EA5E6E;
+
+    font-size: 26px;
+    color: #FFFFFF;
+    font-weight: 700;
+    align-content: center;
+}

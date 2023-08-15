@@ -1,0 +1,23 @@
+/* 폰트 적용 */
+@font-face {
+  font-family: "Pretendard-Regular";
+  src: url("https://cdn.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff")
+    format("woff");
+  font-weight: 400;
+  font-style: normal;
+}
+
+* {
+  font-family: "Pretendard-Regular";
+  overflow: hidden;
+}
+
+#logo-container {
+  text-align: center; /* 로고를 가운데 정렬 */
+}
+
+/* 로고 스타일 */
+#logo {
+  object-fit: contain; /* 비디오를 컨테이너 내에 맞추되, 비율은 유지하도록 함 */
+  border: none;
+}
